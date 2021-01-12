@@ -29,37 +29,32 @@
 
     include "functions/dbh.php";
 
-    $nome = $_SESSION['nome'];
-    $senha = $_SESSION['senha'];
-    $email = $_SESSION['email'];
-  
+    $sql = mysqli_query($connect, "SELECT * FROM administrador");
 
-    
+    while($dados = $sql->fetch_assoc()){
+    $nome = $dados['nome'];
+    $senha = $dados['senha'];
+    $email = $dados['email'];
+    }
+  
     ?>
     
+
     <div class="container">
    <div class = "card">
 
 
     <div class = "container">
-    <input type = "text" value = "Usuário: <?=$_SESSION['nome'];?>"></input>
-    <input type = "text" value = "Senha: <?=$_SESSION['senha'];?>"></input>
-    <input type = "text" value = "Email: <?=$_SESSION['email'];?>"></input>
+    <input type = "text" value = "Usuário: <?php echo $nome;?>"></input>
+    <input type = "text" value = "Senha: <?php echo $senha;?>"></input>
+    <input type = "text" value = "Email: <?php echo $email;?>"></input>
 
-    <form action="edit_perfil.php">
-    <div class="file-field input-field">
-      <div class="btn">
-        <span>File</span>
-        <input type="file">
-      </div>
-      <div class="file-path-wrapper">
-        <input class="file-path validate" type="text">
-      </div>
+    
+    
     </div>
     <button type="submit" class="waves-effect waves-light purple btn">Enviar
   <i class="material-icons right">send</i>
   </button>
-  </form>
 </div>
 </div>
 </div>

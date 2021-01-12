@@ -29,19 +29,20 @@
   <input type="email" name="email_aluno" id="email_aluno">
   <br><br>
   <h6>Telefone: </h6> 
-  <input type="text" name="telefone" id="telefone">
+  <input type="text" name="telefone" id="telefone" placeholder="(XX) XXXX-XXXX">
   <br><br> 
   <h6>Idade: </h6>
   <input type="text" name="idade" id="idade">
   <br><br> 
   <h6>Etnia: </h6>
   <div class="input-field col s12">
-    <select>
-      <option value="" disabled selected>Escolha a etnia</option>
-      <option value="1">Preto</option>
-      <option value="2">Pardo</option>
-      <option value="3">Indígena</option>
-      <option value="4">Branco</option>
+
+    <select name="etnia">
+    <option value='' selected disabled>Selecione: </option>
+    <option value ='branco'>Branco </option> 
+    <option value = 'preto'>Preto </optio> 
+    <option value = 'pardo'>Pardo </option> 
+    <option value = 'indigena'>Indígena </option>
     </select>
   </div>
   </div>

@@ -21,6 +21,8 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
+    <a href = "cadastro_de_auxilios.php">Cadastrar auxílio</a>
+
     </body>
 
   </html>

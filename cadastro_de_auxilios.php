@@ -25,8 +25,21 @@
   <br><br>
   <h6> Nome do estudante: </h6>
   <div class="input-field col s12">
-    <select>
-    <option value="1"><?php echo "$nome"?></option>
+    <select name="estudante"> 
+    <option>Selecione: </option>
+    <?php
+    
+    include "functions/dbh.php";
+    
+    $result = "SELECT * FROM alunos ORDER BY nome_aluno";
+    $sql = mysqli_query($connect, $result);
+    while($row = mysqli_fetch_assoc($sql)) {
+      ?>
+      <option value=""><?php echo $row['nome_aluno']; ?>
+      </option><?php
+    }
+    
+    ?>
     </select>
 </div>
   <br><br> 
