@@ -1,14 +1,14 @@
 <style>
 
 .nav-wrapper  {
-  background-color: #7a4de8;
+  background-color: #c7dcff;
   font-size: 32px;
   font-weight: bold;
   opacity:0.925;
 }
 
 .nav-cottent{
-  background-color: #5f3db3;
+  background-color: #FFFFFF;
   font-size: 21px;
   font-weight: bold;
   opacity:0.925;
@@ -40,30 +40,22 @@ main {
 
 
  </style>
-<nav class = "nav-extended">
-    <div class="nav-wrapper">
-      <a href="home.php" class="logo-container"><img src="logo.jpg" height="54px"  margin-left: "80px" margin-top:"3px"></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">SIGAE
-      </ul>
-    </div> 
-    <div class="container">
-    <div class="nav-cottent">
-      <ul class="tabs tabs-transparent">
-        <li class="tab"><a class="active" href="estudante.php">Estudantes cadastrados</a></li>
-        <li class="tab"><a class="active" href="janela_de_auxilios.php">Auxílios cadastrados</a></li>
-        <li class="tab"><a class="active" href="cadastro.php">Cadastrar estudantes</a></li>
-        <li class="tab"><a class="active" href="cotas.php">Cotas</a></li>
-      </ul>
-    </div>
-    </div>
-  </nav>
+
 
     <ul id="slide-out" class="sidenav">
     <li><div class="user-view">
       <div class="background">
       </div>
     </div></li>
+    <h5>SIGAE</h6>
+    <br>
+    <li> <a class="active" href="home.php"><i class="material-icons">home</i>Home</a></li>
     <li><a href="perfil.php" class="waves-effect"><i class="material-icons">account_circle</i>Perfil</a></li>
+     <li class="tab"><a class="active" href="estudante.php"><i class="material-icons">people</i>Estudantes cadastrados</a></li>
+     <li class="tab"><a class="active" href="janela_de_auxilios.php"><i class="material-icons">view_list</i>Auxílios cadastrados</a></li>
+     <li class="tab"><a class="active" href="cadastro_de_auxilios.php"><i class="material-icons">toc</i>Cadastrar auxílios</a></li>
+      <li class="tab"><a class="active" href="cadastro.php"><i class="material-icons">recent_actors</i>Cadastrar estudantes</a></li>
+      <li class="tab"><a class="active" href="cotas.php"><i class="material-icons">subject</i>Cotas</a></li>
     <li><a href="functions/logout.php" class="waves-effect">Logout</a></li>
     <li><div class="divider"></div></li>
     <li><a class="subheader">Desenvolvido por Leon Tassinari</a></li>
