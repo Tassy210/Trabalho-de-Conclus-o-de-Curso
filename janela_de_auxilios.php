@@ -16,11 +16,31 @@
       <?php include "nav.php"?>
     </head>
 
-    <body>
+    <body class="nav-wrapper"> 
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
+    <div class = "card">
+<table class ="striped">
+
+          <tr>
+              <th>Nome</th>
+              <th>Tipo de auxílio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+         <tr>
+
+          <?php include "ver_auxilios.php"?>
+
+         </tr>
+        </tbody>
+      </table>
+      </div>
+
+    <br>
     <a href = "cadastro_de_auxilios.php">Cadastrar auxílio</a>
 
     </body>

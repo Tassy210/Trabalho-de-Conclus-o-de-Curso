@@ -14,13 +14,14 @@
       <?php include "nav.php"?>
 </head>
 
-<body>
+<body class="nav-wrapper">
 <div class="container">
    <div class = "card">
     <table class="striped">
   
   <div class="container">
   <form method="POST" action="cadastrar.php">
+  
   <br><br>
   <h6>Nome: </h6>
   <input type="text" name="nome_aluno" id="nome_aluno">

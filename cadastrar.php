@@ -12,6 +12,8 @@ include 'functions/dbh.php';
 
     $sql = "INSERT INTO alunos (nome_aluno, email_aluno, telefone, idade, etnia) values ('$nome', '$email', '$telefone', '$idade', '$etnia')";
     $result_perfil = mysqli_query($connect, $sql);
+    
+
 
     mysqli_close($connect);
     header('location: home.php');

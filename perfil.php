@@ -18,7 +18,7 @@
 
     </head>
 
-    <body>
+    <body class = "nav-wrapper">
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -43,7 +43,7 @@
     <div class="container">
    <div class = "card">
 
-
+    <form method = "POST" action ="edit_perfil.php">
     <div class = "container">
     <input type = "text" value = "Usuário: <?php echo $nome;?>"></input>
     <input type = "text" value = "Senha: <?php echo $senha;?>"></input>
@@ -55,6 +55,7 @@
     <button type="submit" class="waves-effect waves-light purple btn">Enviar
   <i class="material-icons right">send</i>
   </button>
+  </form>
 </div>
 </div>
 </div>

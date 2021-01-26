@@ -14,7 +14,7 @@
       <?php include "nav.php"?>
 </head>
 
-<body>
+<body class="nav-wrapper">
 
 <div class="container">
    <div class = "card">
@@ -25,7 +25,7 @@
   <br><br>
   <h6> Nome do estudante: </h6>
   <div class="input-field col s12">
-    <select name="estudante"> 
+    <select name="estudante" value ="estudante"> 
     <option>Selecione: </option>
     <?php
     
@@ -45,55 +45,55 @@
   <br><br> 
   <h6> Cota (Se pertencer): </h6>
   <label>
-            <input type="checkbox" name="ofense" id="denuncia" value="1" class="filled-in" />
+            <input type="checkbox" name="L1" id="cota" value="1" class="filled-in" />
             <span>L1</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" name="word" id="denuncia" value="2" class="filled-in" />
+            <input type="checkbox" name="L2" id="cota" value="2" class="filled-in" />
             <span>L2</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" name="nude" id="denuncia" value="3" class="filled-in" />
+            <input type="checkbox" name="L5" id="cota" value="3" class="filled-in" />
             <span>L5</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" name="exposed" id="denuncia" value="4" class="filled-in"  />
+            <input type="checkbox" name="L6" id="cota" value="4" class="filled-in"  />
             <span>L6</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" name="exposed" id="denuncia" value="4" class="filled-in"  />
+            <input type="checkbox" name="L9" id="cota" value="4" class="filled-in"  />
             <span>L9</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" name="exposed" id="denuncia" value="4" class="filled-in"  />
+            <input type="checkbox" name="L10" id="cota" value="4" class="filled-in"  />
             <span>L10</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" name="exposed" id="denuncia" value="4" class="filled-in"  />
+            <input type="checkbox" name="L13" id="cota" value="4" class="filled-in"  />
             <span>L13</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" name="exposed" id="denuncia" value="4" class="filled-in"  />
+            <input type="checkbox" name="L14" id="cota" value="4" class="filled-in"  />
             <span>L14</span>
           </label>
         </p>
   <h6>Tipo de auxílio: </h6>
   <div class="input-field col s12">
-    <select>
+    <select name="tipo">
       <option value="1">Moradia estudantil</option>
       <option value="2">Alimentação</option>
       <option value="3">Transporte</option>
