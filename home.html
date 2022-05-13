@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    
+    
+    <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+    <script src="js/bootstrap.bundle.js" ></script>
+    <script src="js/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" ></script>
+
+    <style>
+  
+      .body{
+        background-color: #E0EDFF;
+      
+      }
+      
+      
+      
+      
+      </style>
+
+	  <script>
+
+
+var exampleModal = document.getElementById('exampleModal')
+exampleModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  var button = event.relatedTarget
+  // Extract info from data-bs-* attributes
+  var recipient = button.getAttribute('data-bs-whatever')
+  // If necessary, you could initiate an AJAX request here
+  // and then do the updating in a callback.
+  //
+  // Update the modal's content.
+  var modalTitle = exampleModal.querySelector('.modal-title')
+  var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+  modalTitle.textContent = 'New message to ' + recipient
+  modalBodyInput.value = recipient
+})
+
+
+	  </script>
+  </head>
+
+  <body class="body">
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>
+				<div class="p-4">
+
+			<form class="d-flex">
+
+				<input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+				<button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+				
+			</form>
+	
+			<br>
+
+	        <ul class="list-unstyled components mb-5">
+	          <li>
+	              <a href="perfil.html"><span class="fa fa-user mr-3"></span>Perfil</a>
+	          </li>
+
+	          <li>
+              <a href="config.html"><span class="fa fa-cogs mr-3"></span>Configurações</a>
+			  </li>
+			  <li>
+				<a href="index.html">Logout fake</a>
+			  </li>
+	        </ul>
+
+				  
+
+	        <div class="mb-5">
+
+						<form action="#" class="subscribe-form">
+	            <div class="form-group d-flex">
+
+	            </div>
+	          </form>
+					</div>
+
+		<br><br><br><br><br>
+
+	       
+
+	      </div>
+    	</nav>
+
+
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A8C1FF;">
+
+    
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="home.html" style="color: #ffffff;"> <i class="bi bi-house"></i></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="orcamento.html" style="color: #ffffff;">Orçamento  <i class="bi bi-cash"></i></a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffffff;">
+					Vendas  <i class="bi bi-cart4"></i>
+				  </a>
+				  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="venda/cliente_c_1.php" >Cadastrar cliente</a>
+					<a class="dropdown-item" href="venda/cliente_r.php" >Lista de clientes</a>
+					<a class="dropdown-item" href="venda/contrato.php" >Listar Contratos</a>
+					<a class="dropdown-item" href="orcamento.html" >Orçamentos</a>
+				  </div>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffffff;">
+					Engenharia  <i class="bi bi-hammer"></i>
+				  </a>
+				  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="engenharia/projeto_c.html">Cadastrar Projeto Elétrico</a>
+					<a class="dropdown-item" href="comercial.html" >Registrar equipamentos</a>
+					<a class="dropdown-item" href="engenharia/projeto_c.html">Instalação</a>
+				  </div>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="pos_venda.html" style="color: #ffffff;">Pós-venda  <i class="bi bi-pen"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="comercial.html"  style="color: #ffffff;">Gerente Comercial <i class = "fa fa-cube"></i></a>
+				</li>
+			 
+			  </ul>
+
+		  
+			</div>
+		  </nav>
+
+<br><br><br>
+
+
+  
+
+		  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+      
+
+			<div class="card" style="width: 18rem;">
+			  <div class="card-body">
+				<h5 class="card-title">Olá :)</h5>
+				<hr class="divider">
+				
+			  </div>
+			</div>
+		
+			<div class="card" style="width: 18rem;">
+			  <div class="card-body">
+				<h5 class="card-title"><a href="orcamento.php" style = "COLOR: #000000">Orçamento</a></h5>
+				<hr class="divider">
+				<p class="card-text"></p>
+		
+			  </div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+				  <h5 class="card-title"><a href="comercial.html" style = "COLOR: #000000">Gerente Comercial</a></h5>
+				  <hr class="divider">
+				  <p class="card-text"></p>
+		  
+				</div>
+			  </div>
+
+			  <div class="card" style="width: 18rem;">
+				<div class="card-body">
+				  <h5 class="card-title">Karina</h5>
+				  <hr class="divider">
+				  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		  
+				</div>
+			  </div>
+		
+		</div>
+      </div>
+		</div>		
+
+		<br><br>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <br>
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i> Marsol Energia Solar
+          </h6>
+          <p>
+            pipipi popopo
+          </p>
+        </div>
+        
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contatos
+          </h6>
+          <p><i class="fa fa-home"></i> R. Artur Milani, 177 - Ipiranga, Frederico Westphallen</p>
+         
+          <p><i class="fa fa-phone-square"></i> (55) 3744-6978</p>
+      
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright
+  </div>
+
+</footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
